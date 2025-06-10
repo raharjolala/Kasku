@@ -1,0 +1,256 @@
+/* style.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+.page {
+  padding: 2rem;
+  margin: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Auth Container */
+.auth-container {
+  display: flex;
+  height: 100vh;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.auth-container .left-box,
+.auth-container .right-box {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e3f0ff;
+  border-radius: 12px;
+}
+
+.auth-container .right-box {
+  background-color: #ffffff;
+}
+
+.auth-container.register .left-box {
+  order: 2;
+  background-color: #ffffff;
+}
+
+.auth-container.register .right-box {
+  order: 1;
+  background-color: #e3f0ff;
+}
+
+.auth-container h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.auth-container p {
+  margin-bottom: 1.5rem;
+  color: #666;
+  text-align: center;
+}
+
+.auth-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+.auth-container input[type="email"],
+.auth-container input[type="password"],
+.auth-container input[type="text"] {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.auth-container button {
+  padding: 0.75rem;
+  background-color: #3366cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.auth-container .forgot {
+  font-size: 0.85rem;
+  color: #3366cc;
+  text-align: right;
+}
+
+.social-buttons button {
+  margin: 0 0.25rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #3366cc;
+  color: white;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  cursor: pointer;
+}
+
+/* Summary Cards */
+.summary {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 200px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+table th, table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+table thead {
+  background-color: #e3f0ff;
+}
+
+/* Forms */
+form label {
+  font-weight: bold;
+  margin-top: 1rem;
+  display: block;
+}
+
+form input[type="text"],
+form input[type="number"],
+form select,
+form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 0.5rem;
+}
+
+form button {
+  margin-top: 1.5rem;
+  padding: 0.75rem;
+  background-color: #3366cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Grafik Laporan */
+.laporan-grafik {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.ringkasan p {
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Filter for Catatan Keuangan */
+.filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.filter-container .search-input {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.filter-container select,
+.filter-container input[type="date"] {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Intro section on Dashboard */
+.dashboard-intro {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.dashboard-intro h1 {
+  font-size: 2rem;
+  color: #3366cc;
+  margin-bottom: 0.5rem;
+}
+
+.dashboard-intro p {
+  font-size: 1rem;
+  color: #555;
+}
